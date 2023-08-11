@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/register.css">
 
 </head>
+
 <body>
 
     <div class="nav">
@@ -60,5 +62,52 @@
         </div>
     </div>
 
+    <div class="register-form">
+        <h3>Register</h3>
+        <hr>
+
+        <label for="username">
+            Username
+             <sup style="color: red;">*</sup>
+        </label>
+        <input type="text" name="username" id="username" placeholder="Enter you username..." />
+
+        <label for="password">
+            Password 
+            <sup style="color: red;">*</sup>
+        </label>
+        <input type="password" name="password" id="password" placeholder="Enter your password..." />
+
+        <label for="email">
+            Email 
+            <sup style="color: red;">*</sup>
+        </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email..." />
+
+        <label for="profilePicture">
+            Profile picture 
+            <sup style="color: red;">*</sup>
+        </label>
+        <input type="file" name="profilePicture" id="profilePicture" accept="image/png, image/jpeg" />
+        <img id="profilePicturePreview" height="100" width="100"
+            style="margin-top: 10px;background-color: aliceblue;object-fit: contain;">
+
+        <label for="gender">Gender <sup style="color: red;">*</sup></label>
+        <div>
+            <input type="radio" name="gender" id="genderM" value="male"> Male
+            <input type="radio" name="gender" id="genderF" value="female"> Female
+            <input type="radio" name="gender" id="genderO" value="others"> Others
+        </div>
+
+        <button onclick="register();">Register &rarr;</button>
+
+        <div id="register-msg"></div>
+    </div>
+
+
+    <script src="assets/js/same.js"></script>
+    <script src="assets/js/register.js"></script>
+
 </body>
+
 </html>
