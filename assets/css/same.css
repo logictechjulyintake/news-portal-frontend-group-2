@@ -7,6 +7,10 @@
     font-family: 'Playfair Display', serif;
 }
 
+body {
+    background-color: #ebebeb;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
